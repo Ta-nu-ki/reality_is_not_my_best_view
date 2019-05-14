@@ -10,8 +10,13 @@
     <style> * { -webkit-tap-highlight-color: rgba(0,0,0,0); } </style> 
 </head>
 <body>
-    <a-scene>
+    <a-scene embedded arjs>
         <a-marker-camera preset='hiro'></a-marker-camera>
+        <a-assets>
+          <a-asset-item id="tree" src="fox.glb"></a-asset-item>
+        </a-assets>
+        <!-- use your gltf model -->
+        <a-entity gltf-model="##tree"></a-entity>
     </a-scene>
 </body>
 </html>
