@@ -6,15 +6,12 @@
     <script src="https://cdn.rawgit.com/donmccurdy/aframe-extras/cfe5f316/dist/aframe-extras.js"></script>
     <script src="https://rawgit.com/chenzlabs/three.ar.js/0f645a5/dist/three.ar.min.js"></script>
     <script src="https://rawgit.com/chenzlabs/aframe-ar/0cf8d5a/dist/aframe-ar.min.js"></script>
-        <!-- Prevent touch causing flicker on iOS. -->
-        <style> * { -webkit-tap-highlight-color: rgba(0,0,0,0); } </style> 
+    <!-- Prevent touch causing flicker on iOS. -->
+    <style> * { -webkit-tap-highlight-color: rgba(0,0,0,0); } </style> 
 </head>
 <body>
     <a-scene>
-        <a-marker-camera type='pattern' url='test.patt'>
-            <a-entity shadow="cast: true" gltf-model="https://cdn.glitch.com/0d1945ac-ed6f-44be-9903-e1c1626575a4%2Fcar.glb?1548349423434" position="0 0 0" crossOrigin="anonymous" response-type="arraybuffer" rotation="0 0 0" scale="0.05 0.05 0.05">
-            </a-entity>
-        </a-marker-camera>
+        <a-marker-camera preset='hiro'></a-marker-camera>
     </a-scene>
 </body>
 </html>
