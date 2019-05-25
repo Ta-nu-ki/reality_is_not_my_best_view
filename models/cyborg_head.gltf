@@ -1,0 +1,182 @@
+{
+    "asset" : {
+        "generator" : "Khronos glTF Blender I/O v0.9.11",
+        "version" : "2.0"
+    },
+    "scene" : 0,
+    "scenes" : [
+        {
+            "name" : "Scene",
+            "nodes" : [
+                0,
+                1,
+                2
+            ]
+        }
+    ],
+    "nodes" : [
+        {
+            "rotation" : [
+                0.7071068286895752,
+                0,
+                0,
+                0.7071067094802856
+            ],
+            "mesh" : 0,
+            "name" : "cyborg pCylinder1"
+        },
+        {
+            "rotation" : [
+                0.16907575726509094,
+                0.7558803558349609,
+                -0.27217137813568115,
+                0.570947527885437
+            ],
+            "translation" : [
+                4.076245307922363,
+                5.903861999511719,
+                -1.0054539442062378
+            ],
+            "name" : "Lamp"
+        },
+        {
+            "rotation" : [
+                0.483536034822464,
+                0.33687159419059753,
+                -0.20870360732078552,
+                0.7804827094078064
+            ],
+            "translation" : [
+                7.481131553649902,
+                5.34366512298584,
+                6.5076398849487305
+            ],
+            "name" : "Camera"
+        }
+    ],
+    "materials" : [
+        {
+            "emissiveFactor" : [
+                0.24297884106636047,
+                0.5978122353553772,
+                0.8000000715255737
+            ],
+            "pbrMetallicRoughness" : {
+                "baseColorTexture" : {
+                    "texCoord" : 0,
+                    "index" : 0
+                },
+                "metallicFactor" : 1,
+                "roughnessFactor" : 1,
+                "baseColorFactor" : [
+                    1,
+                    1,
+                    1,
+                    1
+                ]
+            },
+            "name" : "Material.006"
+        }
+    ],
+    "meshes" : [
+        {
+            "primitives" : [
+                {
+                    "attributes" : {
+                        "POSITION" : 0,
+                        "TEXCOORD_0" : 1,
+                        "NORMAL" : 2
+                    },
+                    "indices" : 3,
+                    "material" : 0
+                }
+            ],
+            "name" : "cyborg pCylinder1"
+        }
+    ],
+    "textures" : [
+        {
+            "sampler" : 0,
+            "source" : 0
+        }
+    ],
+    "images" : [
+        {
+            "mimeType" : "image/png",
+            "name" : "cyborg_head",
+            "uri" : "cyborg_head.png"
+        }
+    ],
+    "accessors" : [
+        {
+            "min" : [
+                -3.020134925842285,
+                -1.553130030632019,
+                -3.0052170753479004
+            ],
+            "componentType" : 5126,
+            "type" : "VEC3",
+            "count" : 14178,
+            "max" : [
+                6.060143947601318,
+                3.5830090045928955,
+                0.022659000009298325
+            ],
+            "bufferView" : 0
+        },
+        {
+            "bufferView" : 1,
+            "componentType" : 5126,
+            "type" : "VEC2",
+            "count" : 14178
+        },
+        {
+            "bufferView" : 2,
+            "componentType" : 5126,
+            "type" : "VEC3",
+            "count" : 14178
+        },
+        {
+            "bufferView" : 3,
+            "componentType" : 5123,
+            "type" : "SCALAR",
+            "count" : 38304
+        }
+    ],
+    "bufferViews" : [
+        {
+            "buffer" : 0,
+            "byteLength" : 170136,
+            "byteOffset" : 0
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 113424,
+            "byteOffset" : 170136
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 170136,
+            "byteOffset" : 283560
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 76608,
+            "byteOffset" : 453696
+        }
+    ],
+    "samplers" : [
+        {
+            "wrapT" : 33071,
+            "minFilter" : 9986,
+            "wrapS" : 33071,
+            "magFilter" : 9729
+        }
+    ],
+    "buffers" : [
+        {
+            "uri" : "cyborg_head.bin",
+            "byteLength" : 530304
+        }
+    ]
+}
