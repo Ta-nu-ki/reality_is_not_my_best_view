@@ -3,24 +3,26 @@
   <script src="https://aframe.io/releases/0.8.0/aframe.min.js"></script>
   <script src="https://cdn.jsdelivr.net/gh/jeromeetienne/AR.js@1.7.0/aframe/build/aframe-ar.js"></script>
   <script src="https://cdn.jsdelivr.net/gh/donmccurdy/aframe-extras@v5.1.0/dist/aframe-extras.min.js"></script>
-  AFRAME.registerComponent('model-opacity', {
-  schema: {default: 1.0},
-  init: function () {
-    this.el.addEventListener('model-loaded', this.update.bind(this));
-  },
-  update: function () {
-    var mesh = this.el.getObject3D('mesh');
-    var data = this.data;
-    if (!mesh) { return; }
-    mesh.traverse(function (node) {
-      if (node.isMesh) {
-        node.material.opacity = data;
-        node.material.transparent = data < 1.0;
-        node.material.needsUpdate = true;
-      }
-    });
-  }
-});
+  <script>
+    AFRAME.registerComponent('model-opacity', {
+    schema: {default: 1.0},
+    init: function () {
+      this.el.addEventListener('model-loaded', this.update.bind(this));
+    },
+    update: function () {
+      var mesh = this.el.getObject3D('mesh');
+      var data = this.data;
+      if (!mesh) { return; }
+      mesh.traverse(function (node) {
+        if (node.isMesh) {
+          node.material.opacity = data;
+          node.material.transparent = data < 1.0;
+          node.material.needsUpdate = true;
+        }
+      });
+    }
+  });
+  </script>    
 </head>
 <body>
   <a-scene embedded arjs='sourceType: webcam; debugUIEnabled: false;'>
