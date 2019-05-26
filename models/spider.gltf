@@ -146,35 +146,35 @@
     "accessors" : [
         {
             "max" : [
-                507.30657958984375,
-                328.4722595214844,
-                0.27851977944374084
+                505.0819396972656,
+                328.1109924316406,
+                -0.7183973789215088
             ],
             "type" : "VEC3",
             "min" : [
-                -499.6058349609375,
-                -396.4622802734375,
-                -261.0089416503906
+                -500.2313537597656,
+                -398.0893249511719,
+                -258.508544921875
             ],
             "bufferView" : 0,
             "componentType" : 5126,
-            "count" : 4704
+            "count" : 1247
         },
         {
             "type" : "VEC2",
-            "count" : 4704,
+            "count" : 1247,
             "componentType" : 5126,
             "bufferView" : 1
         },
         {
             "type" : "VEC3",
-            "count" : 4704,
+            "count" : 1247,
             "componentType" : 5126,
             "bufferView" : 2
         },
         {
             "type" : "SCALAR",
-            "count" : 11808,
+            "count" : 2538,
             "componentType" : 5123,
             "bufferView" : 3
         },
@@ -217,41 +217,41 @@
         {
             "buffer" : 0,
             "byteOffset" : 0,
-            "byteLength" : 56448
+            "byteLength" : 14964
         },
         {
             "buffer" : 0,
-            "byteOffset" : 56448,
-            "byteLength" : 37632
+            "byteOffset" : 14964,
+            "byteLength" : 9976
         },
         {
             "buffer" : 0,
-            "byteOffset" : 94080,
-            "byteLength" : 56448
+            "byteOffset" : 24940,
+            "byteLength" : 14964
         },
         {
             "buffer" : 0,
-            "byteOffset" : 150528,
-            "byteLength" : 23616
+            "byteOffset" : 39904,
+            "byteLength" : 5076
         },
         {
             "buffer" : 0,
-            "byteOffset" : 174144,
+            "byteOffset" : 44980,
             "byteLength" : 34860
         },
         {
             "buffer" : 0,
-            "byteOffset" : 209004,
+            "byteOffset" : 79840,
             "byteLength" : 23240
         },
         {
             "buffer" : 0,
-            "byteOffset" : 232244,
+            "byteOffset" : 103080,
             "byteLength" : 34860
         },
         {
             "buffer" : 0,
-            "byteOffset" : 267104,
+            "byteOffset" : 137940,
             "byteLength" : 14004
         }
     ],
@@ -271,7 +271,7 @@
     ],
     "buffers" : [
         {
-            "byteLength" : 281108,
+            "byteLength" : 151944,
             "uri" : "spider.bin"
         }
     ]
