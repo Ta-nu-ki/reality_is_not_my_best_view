@@ -1,0 +1,278 @@
+{
+    "asset" : {
+        "generator" : "Khronos glTF Blender I/O v0.9.11",
+        "version" : "2.0"
+    },
+    "scene" : 0,
+    "scenes" : [
+        {
+            "nodes" : [
+                0,
+                1
+            ],
+            "name" : "Scene"
+        }
+    ],
+    "nodes" : [
+        {
+            "mesh" : 0,
+            "name" : "legs",
+            "rotation" : [
+                0.7071068286895752,
+                0,
+                0,
+                0.7071067094802856
+            ],
+            "scale" : [
+                0.010012042708694935,
+                0.010012042708694935,
+                0.010012042708694935
+            ]
+        },
+        {
+            "mesh" : 1,
+            "name" : "body",
+            "rotation" : [
+                0.7071068286895752,
+                0,
+                0,
+                0.7071067094802856
+            ],
+            "scale" : [
+                0.010012042708694935,
+                0.010012042708694935,
+                0.010012042708694935
+            ]
+        }
+    ],
+    "materials" : [
+        {
+            "pbrMetallicRoughness" : {
+                "metallicFactor" : 1,
+                "baseColorTexture" : {
+                    "index" : 0,
+                    "texCoord" : 0
+                },
+                "baseColorFactor" : [
+                    1,
+                    1,
+                    1,
+                    1
+                ],
+                "roughnessFactor" : 1
+            },
+            "name" : "Material",
+            "emissiveFactor" : [
+                0.24297884106636047,
+                0.5978122353553772,
+                0.8000000715255737
+            ]
+        },
+        {
+            "pbrMetallicRoughness" : {
+                "metallicFactor" : 1,
+                "baseColorTexture" : {
+                    "index" : 1,
+                    "texCoord" : 0
+                },
+                "baseColorFactor" : [
+                    1,
+                    1,
+                    1,
+                    1
+                ],
+                "roughnessFactor" : 1
+            },
+            "name" : "Material.006",
+            "emissiveFactor" : [
+                0.24297884106636047,
+                0.5978122353553772,
+                0.8000000715255737
+            ]
+        }
+    ],
+    "meshes" : [
+        {
+            "name" : "legs",
+            "primitives" : [
+                {
+                    "material" : 0,
+                    "attributes" : {
+                        "POSITION" : 0,
+                        "TEXCOORD_0" : 1,
+                        "NORMAL" : 2
+                    },
+                    "indices" : 3
+                }
+            ]
+        },
+        {
+            "name" : "body",
+            "primitives" : [
+                {
+                    "material" : 1,
+                    "attributes" : {
+                        "POSITION" : 4,
+                        "TEXCOORD_0" : 5,
+                        "NORMAL" : 6
+                    },
+                    "indices" : 7
+                }
+            ]
+        }
+    ],
+    "textures" : [
+        {
+            "source" : 0,
+            "sampler" : 0
+        },
+        {
+            "source" : 1,
+            "sampler" : 1
+        }
+    ],
+    "images" : [
+        {
+            "mimeType" : "image/png",
+            "name" : "spider_legs",
+            "uri" : "spider_legs.png"
+        },
+        {
+            "mimeType" : "image/png",
+            "name" : "spider_body",
+            "uri" : "spider_body.png"
+        }
+    ],
+    "accessors" : [
+        {
+            "max" : [
+                507.30657958984375,
+                328.4722595214844,
+                0.27851977944374084
+            ],
+            "type" : "VEC3",
+            "min" : [
+                -499.6058349609375,
+                -396.4622802734375,
+                -261.0089416503906
+            ],
+            "bufferView" : 0,
+            "componentType" : 5126,
+            "count" : 4704
+        },
+        {
+            "type" : "VEC2",
+            "count" : 4704,
+            "componentType" : 5126,
+            "bufferView" : 1
+        },
+        {
+            "type" : "VEC3",
+            "count" : 4704,
+            "componentType" : 5126,
+            "bufferView" : 2
+        },
+        {
+            "type" : "SCALAR",
+            "count" : 11808,
+            "componentType" : 5123,
+            "bufferView" : 3
+        },
+        {
+            "max" : [
+                127.45272064208984,
+                219.95509338378906,
+                -34.16529846191406
+            ],
+            "type" : "VEC3",
+            "min" : [
+                -127.45735931396484,
+                -564.9937744140625,
+                -329.2483825683594
+            ],
+            "bufferView" : 4,
+            "componentType" : 5126,
+            "count" : 2905
+        },
+        {
+            "type" : "VEC2",
+            "count" : 2905,
+            "componentType" : 5126,
+            "bufferView" : 5
+        },
+        {
+            "type" : "VEC3",
+            "count" : 2905,
+            "componentType" : 5126,
+            "bufferView" : 6
+        },
+        {
+            "type" : "SCALAR",
+            "count" : 7002,
+            "componentType" : 5123,
+            "bufferView" : 7
+        }
+    ],
+    "bufferViews" : [
+        {
+            "buffer" : 0,
+            "byteOffset" : 0,
+            "byteLength" : 56448
+        },
+        {
+            "buffer" : 0,
+            "byteOffset" : 56448,
+            "byteLength" : 37632
+        },
+        {
+            "buffer" : 0,
+            "byteOffset" : 94080,
+            "byteLength" : 56448
+        },
+        {
+            "buffer" : 0,
+            "byteOffset" : 150528,
+            "byteLength" : 23616
+        },
+        {
+            "buffer" : 0,
+            "byteOffset" : 174144,
+            "byteLength" : 34860
+        },
+        {
+            "buffer" : 0,
+            "byteOffset" : 209004,
+            "byteLength" : 23240
+        },
+        {
+            "buffer" : 0,
+            "byteOffset" : 232244,
+            "byteLength" : 34860
+        },
+        {
+            "buffer" : 0,
+            "byteOffset" : 267104,
+            "byteLength" : 14004
+        }
+    ],
+    "samplers" : [
+        {
+            "magFilter" : 9729,
+            "wrapT" : 33071,
+            "wrapS" : 33071,
+            "minFilter" : 9986
+        },
+        {
+            "magFilter" : 9729,
+            "wrapT" : 33071,
+            "wrapS" : 33071,
+            "minFilter" : 9986
+        }
+    ],
+    "buffers" : [
+        {
+            "byteLength" : 281108,
+            "uri" : "spider.bin"
+        }
+    ]
+}
