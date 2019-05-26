@@ -3,6 +3,26 @@
   <script src="https://aframe.io/releases/0.8.0/aframe.min.js"></script>
   <script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.7.0/aframe/build/aframe-ar.js"></script>
   <script src="https://cdn.rawgit.com/donmccurdy/aframe-extras/v5.1.0/dist/aframe-extras.min.js"></script>
+    <script>
+    AFRAME.registerComponent('model-opacity', {
+    schema: {default: 1.0},
+    init: function () {
+      this.el.addEventListener('model-loaded', this.update.bind(this));
+    },
+    update: function () {
+      var mesh = this.el.getObject3D('mesh');
+      var data = this.data;
+      if (!mesh) { return; }
+      mesh.traverse(function (node) {
+        if (node.isMesh) {
+          node.material.opacity = data;
+          node.material.transparent = data < 1.0;
+          node.material.needsUpdate = true;
+        }
+      });
+    }
+  });
+  </script> 
       <!-- Prevent touch causing flicker on iOS. -->
     <style> * { -webkit-tap-highlight-color: rgba(0,0,0,0); } </style> 
 </head>
@@ -23,7 +43,7 @@
     </a-marker> 
     -->
     <a-marker preset='kanji'>
-      <a-entity position="0 -1 -7" scale="5 5 5" gltf-model="models/cyborg_head.gltf" animation-mixer="clip" shadow="cast: true">
+      <a-entity position="0 -1 -7" scale="1 1 1" gltf-model="models/cyborg_head.gltf" animation-mixer="clip" shadow="cast: true" model-opacity="0.65">
         <a-animation attribute="position" dur="8000" to="0 -1 -1" repeat="indefinite"></a-animation>
       </a-entity>
      </a-marker>    
