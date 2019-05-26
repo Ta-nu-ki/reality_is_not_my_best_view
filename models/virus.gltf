@@ -82,27 +82,27 @@
             "bufferView" : 0,
             "type" : "VEC2",
             "componentType" : 5126,
-            "count" : 5239
+            "count" : 4716
         },
         {
             "bufferView" : 1,
             "type" : "VEC3",
             "componentType" : 5126,
-            "count" : 5239
+            "count" : 4716
         },
         {
             "bufferView" : 2,
             "max" : [
-                -15.724374771118164,
-                5.907135009765625,
-                8.46280288696289
+                2.789043426513672,
+                2.7302629947662354,
+                2.8539352416992188
             ],
             "type" : "VEC3",
-            "count" : 5239,
+            "count" : 4716,
             "min" : [
-                -21.128238677978516,
-                0.18405723571777344,
-                2.661182403564453
+                -2.6148204803466797,
+                -2.992814779281616,
+                -2.9476852416992188
             ],
             "componentType" : 5126
         },
@@ -117,21 +117,21 @@
         {
             "buffer" : 0,
             "byteOffset" : 0,
-            "byteLength" : 41912
+            "byteLength" : 37728
         },
         {
             "buffer" : 0,
-            "byteOffset" : 41912,
-            "byteLength" : 62868
+            "byteOffset" : 37728,
+            "byteLength" : 56592
         },
         {
             "buffer" : 0,
-            "byteOffset" : 104780,
-            "byteLength" : 62868
+            "byteOffset" : 94320,
+            "byteLength" : 56592
         },
         {
             "buffer" : 0,
-            "byteOffset" : 167648,
+            "byteOffset" : 150912,
             "byteLength" : 51216
         }
     ],
@@ -146,7 +146,7 @@
     "buffers" : [
         {
             "uri" : "virus.bin",
-            "byteLength" : 218864
+            "byteLength" : 202128
         }
     ]
 }
