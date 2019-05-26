@@ -1,152 +1,152 @@
 {
     "asset" : {
-        "generator" : "Khronos glTF Blender I/O v0.9.11",
-        "version" : "2.0"
+        "version" : "2.0",
+        "generator" : "Khronos glTF Blender I/O v0.9.11"
     },
     "scene" : 0,
     "scenes" : [
         {
-            "name" : "Scene",
             "nodes" : [
                 0
-            ]
+            ],
+            "name" : "Scene"
         }
     ],
     "nodes" : [
         {
+            "mesh" : 0,
             "name" : "Low_Poly",
             "rotation" : [
                 0.7071068286895752,
                 0,
                 0,
                 0.7071067094802856
-            ],
-            "mesh" : 0
+            ]
         }
     ],
     "materials" : [
         {
-            "name" : "Material.006",
             "emissiveFactor" : [
                 0.24297884106636047,
                 0.5978122353553772,
                 0.8000000715255737
             ],
+            "name" : "Material.006",
             "pbrMetallicRoughness" : {
-                "roughnessFactor" : 1,
+                "metallicFactor" : 1,
                 "baseColorFactor" : [
                     1,
                     1,
                     1,
                     1
                 ],
-                "metallicFactor" : 1,
                 "baseColorTexture" : {
-                    "texCoord" : 0,
-                    "index" : 0
-                }
+                    "index" : 0,
+                    "texCoord" : 0
+                },
+                "roughnessFactor" : 1
             }
         }
     ],
     "meshes" : [
         {
-            "name" : "Low_Poly",
             "primitives" : [
                 {
-                    "material" : 0,
                     "attributes" : {
-                        "POSITION" : 0,
-                        "TEXCOORD_0" : 1,
-                        "NORMAL" : 2
+                        "TEXCOORD_0" : 0,
+                        "NORMAL" : 1,
+                        "POSITION" : 2
                     },
+                    "material" : 0,
                     "indices" : 3
                 }
-            ]
+            ],
+            "name" : "Low_Poly"
         }
     ],
     "textures" : [
         {
-            "source" : 0,
-            "sampler" : 0
+            "sampler" : 0,
+            "source" : 0
         }
     ],
     "images" : [
         {
+            "mimeType" : "image/png",
             "name" : "virus",
-            "uri" : "virus.png",
-            "mimeType" : "image/png"
+            "uri" : "virus.png"
         }
     ],
     "accessors" : [
         {
             "bufferView" : 0,
-            "count" : 9804,
+            "type" : "VEC2",
             "componentType" : 5126,
-            "min" : [
-                -44.54540252685547,
-                -26.57592010498047,
-                -23.695316314697266
-            ],
+            "count" : 5239
+        },
+        {
+            "bufferView" : 1,
+            "type" : "VEC3",
+            "componentType" : 5126,
+            "count" : 5239
+        },
+        {
+            "bufferView" : 2,
             "max" : [
-                9.213211059570312,
+                9.21320915222168,
                 30.31942367553711,
                 33.9808349609375
             ],
-            "type" : "VEC3"
-        },
-        {
-            "componentType" : 5126,
-            "type" : "VEC2",
-            "bufferView" : 1,
-            "count" : 9804
-        },
-        {
-            "componentType" : 5126,
             "type" : "VEC3",
-            "bufferView" : 2,
-            "count" : 9804
+            "count" : 5239,
+            "min" : [
+                -44.508689880371094,
+                -26.57592010498047,
+                -23.695316314697266
+            ],
+            "componentType" : 5126
         },
         {
-            "componentType" : 5123,
-            "type" : "SCALAR",
             "bufferView" : 3,
-            "count" : 51228
+            "type" : "SCALAR",
+            "componentType" : 5123,
+            "count" : 25608
         }
     ],
     "bufferViews" : [
         {
             "buffer" : 0,
-            "byteLength" : 117648,
-            "byteOffset" : 0
+            "byteOffset" : 0,
+            "byteLength" : 41912
         },
         {
             "buffer" : 0,
-            "byteLength" : 78432,
-            "byteOffset" : 117648
+            "byteOffset" : 41912,
+            "byteLength" : 62868
         },
         {
             "buffer" : 0,
-            "byteLength" : 117648,
-            "byteOffset" : 196080
+            "byteOffset" : 104780,
+            "byteLength" : 62868
         },
         {
             "buffer" : 0,
-            "byteLength" : 102456,
-            "byteOffset" : 313728
+            "byteOffset" : 167648,
+            "byteLength" : 51216
         }
     ],
     "samplers" : [
         {
-            "wrapT" : 33071,
-            "wrapS" : 33071,
             "minFilter" : 9986,
-            "magFilter" : 9729
+            "wrapT" : 33071,
+            "magFilter" : 9729,
+            "wrapS" : 33071
         }
     ],
     "buffers" : [
         {
             "uri" : "virus.bin",
-            "byteLength" : 416184
+            "byteLength" : 218864
         }
     ]
 }
