@@ -68,7 +68,11 @@
       <a-entity position="-3 0 0" scale="0.5 0.5 0.5" gltf-model="models/bot.gltf" animation-mixer="clip:" model-opacity="0.65" rotation="-90 0 0">
         <a-animation attribute="position" dur="8000" to="3 2 1" repeat="indefinite" from="-3 0 0"></a-animation>
       </a-entity> 
-    </a-marker>    
+    </a-marker>
+    <a-marker preset='kanji'>
+      <a-entity position="0 0 0" scale="0.5 0.5 0.5" gltf-model="models/text.gltf" animation-mixer="clip:" model-opacity="0.65" rotation="-90 0 0">
+      </a-entity> 
+    </a-marker>        
     <a-entity camera></a-entity>
   </a-scene>
 </body>
