@@ -41,8 +41,24 @@
    <a-entity position="0 0 1" scale="0.75 0.75 0.75" gltf-model="models/skeleton_sitdown.gltf" model-opacity="0.65" rotation="130 -100 80">
 	 </a-entity>
   </a-marker>
-    
-    <a-entity camera></a-entity>
+	 
+  <a-marker type='pattern' url='cyborg_head.patt'>
+   <a-entity position="0 -1 0" scale="0.5 0.5 0.5" gltf-model="models/cyborg_head.gltf" model-opacity="0.65" rotation="0 0 0">
+   </a-entity>
+  </a-marker>   
+	 
+  <a-marker type='pattern' url='elemental.patt'>
+   <a-entity position="0 0 1" scale="0.75 0.75 0.75" gltf-model="models/elemental.gltf" animation-mixer="clip:; duration:10" model-opacity="0.65" rotation="90 180 0">
+    <a-animation attribute="position" dur="10000" to="0 8 0" repeat="indefinite"></a-animation>
+   </a-entity>
+  </a-marker>
+	 
+  <a-marker type='pattern' url='spider.patt'>
+   <a-entity position="0 0 1" scale="0.75 0.75 0.75" gltf-model="models/spider.gltf" model-opacity="0.65" rotation="0 0 0">
+   </a-entity>
+  </a-marker> 
+	 
+   <a-entity camera></a-entity>
   </a-scene>
 </body>
 </html>
