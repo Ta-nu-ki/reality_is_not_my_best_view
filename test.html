@@ -54,10 +54,12 @@
         </a-entity>
       </a-marker> 
 
-    <a-marker preset='kanji'>
+      <a-marker type='pattern' url='virus.patt'>
       <a-entity position="0 0 1" scale="0.75 0.75 0.75" gltf-model="models/virus.gltf" model-opacity="0.65" rotation="0 0 0">
         <a-animation attribute="model-opacity" dur="2000" to="0.55" repeat="indefinite" from="0.65"></a-animation>
-    </a-entity>   
+    </a-entity>
+        </a-marker> 
+    
     <a-marker preset='kanji'>
       <a-entity position="0 0 0" scale="1.5 1.5 1.5" gltf-model="models/flesh.gltf" model-opacity="0.65" rotation="-80 0 0">
         <a-animation attribute="model-opacity" dur="10000" to="0" repeat="indefinite" from="0.65"></a-animation>
