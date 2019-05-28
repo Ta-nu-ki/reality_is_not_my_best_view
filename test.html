@@ -25,56 +25,60 @@
   </script> 
       <!-- Prevent touch causing flicker on iOS. -->
     <style> * { -webkit-tap-highlight-color: rgba(0,0,0,0); } </style> 
+  
   <title>reality is not my best view</title>
 </head>
+  
 <body>
   <a-scene vr-mode-ui="enabled: false" embedded arjs='sourceType: webcam; debugUIEnabled: false;'>
-
-    <a-marker type='pattern' url='droid.patt'>
-      <a-entity position="0 0 0" scale="0.5 0.5 0.5" gltf-model="models/droid.gltf" animation-mixer="clip:" model-opacity="0.65" rotation="-90 0 0">
-      </a-entity> 
+	
+	<a-marker type='pattern' url='droid.patt'>
+		<a-entity position="0 0 0" scale="0.5 0.5 0.5" gltf-model="models/droid.gltf" animation-mixer="clip:" model-opacity="0.65" rotation="-90 0 0">
+		</a-entity> 
     </a-marker>
 
     <a-marker type='pattern' url='skeleton.patt'>
-      <a-entity position="0 0 1" scale="0.75 0.75 0.75" gltf-model="models/skeleton_sitdown.gltf" model-opacity="0.65" rotation="130 -100 80"></a-entity>
+		<a-entity position="0 0 1" scale="0.75 0.75 0.75" gltf-model="models/skeleton_sitdown.gltf" model-opacity="0.65" rotation="130 -100 80">
+		</a-entity>
     </a-marker>
       
     <a-marker type='pattern' url='cyborg_head.patt'>
-      <a-entity position="0 -1 0" scale="0.5 0.5 0.5" gltf-model="models/cyborg_head.gltf" model-opacity="0.65" rotation="0 0 0"></a-entity>
+		<a-entity position="0 -1 0" scale="0.5 0.5 0.5" gltf-model="models/cyborg_head.gltf" model-opacity="0.65" rotation="0 0 0">
+		</a-entity>
     </a-marker>    
 
     <a-marker type='pattern' url='elemental.patt'>
-      <a-entity position="0 0 1" scale="0.75 0.75 0.75" gltf-model="models/elemental.gltf" animation-mixer="clip:; duration:10" model-opacity="0.65" rotation="90 180 0">
-            <a-animation attribute="position" dur="10000" to="0 8 0" repeat="indefinite"></a-animation>
-      </a-entity>
-        </a-marker> 
+		<a-entity position="0 0 1" scale="0.75 0.75 0.75" gltf-model="models/elemental.gltf" animation-mixer="clip:; duration:10" model-opacity="0.65" rotation="90 180 0">
+		<a-animation attribute="position" dur="10000" to="0 8 0" repeat="indefinite"></a-animation>
+		</a-entity>
+	  </a-marker> 
 
-      <a-marker type='pattern' url='spider.patt'>
-        <a-entity position="0 0 1" scale="0.75 0.75 0.75" gltf-model="models/spider.gltf" model-opacity="0.65" rotation="0 0 0">
-        </a-entity>
-      </a-marker> 
-
-      <a-marker type='pattern' url='virus.patt'>
-      <a-entity position="0 0 1" scale="0.75 0.75 0.75" gltf-model="models/virus.gltf" model-opacity="0.65" rotation="0 0 0">
-        <a-animation attribute="model-opacity" dur="2000" to="0.55" repeat="indefinite" from="0.65"></a-animation>
+	  <a-marker type='pattern' url='spider.patt'>
+		<a-entity position="0 0 1" scale="0.75 0.75 0.75" gltf-model="models/spider.gltf" model-opacity="0.65" rotation="0 0 0">
     </a-entity>
-        </a-marker> 
+	  </a-marker> 
+	
+	  <a-marker type='pattern' url='virus.patt'>
+		<a-entity position="0 0 1" scale="0.75 0.75 0.75" gltf-model="models/virus.gltf" model-opacity="0.65" rotation="0 0 0">
+		<a-animation attribute="model-opacity" dur="2000" to="0.55" repeat="indefinite" from="0.65"></a-animation>
+		</a-entity>
+	  </a-marker> 
     
     <a-marker type='pattern' url='flesh.patt'>
-      <a-entity position="0 0 0" scale="1.5 1.5 1.5" gltf-model="models/flesh.gltf" model-opacity="0.65" rotation="-80 0 0">
-        <a-animation attribute="model-opacity" dur="10000" to="0" repeat="indefinite" from="0.65"></a-animation>
-    </a-entity>  
-        </a-marker> 
+		<a-entity position="0 0 0" scale="1.5 1.5 1.5" gltf-model="models/flesh.gltf" model-opacity="0.65" rotation="-80 0 0">
+		<a-animation attribute="model-opacity" dur="10000" to="0" repeat="indefinite" from="0.65"></a-animation>
+		</a-entity>  
+	  </a-marker> 
     
-    <a-marker type='pattern' url='bot.patt'>
-      <a-entity position="-3 0 0" scale="0.5 0.5 0.5" gltf-model="models/bot.gltf" animation-mixer="clip:" model-opacity="0.65" rotation="-90 0 0">
-        <a-animation attribute="position" dur="8000" to="3 2 1" repeat="indefinite" from="-3 0 0"></a-animation>
-      </a-entity> 
+	  <a-marker type='pattern' url='bot.patt'>
+		<a-entity position="-3 0 0" scale="0.5 0.5 0.5" gltf-model="models/bot.gltf" animation-mixer="clip:" model-opacity="0.65" rotation="-90 0 0">
+		<a-animation attribute="position" dur="8000" to="3 2 1" repeat="indefinite" from="-3 0 0"></a-animation>
+		</a-entity> 
     </a-marker>
     
-    <a-marker type='pattern' url='text.patt'>
-      <a-entity position="0 0 0" scale="0.5 0.5 0.5" gltf-model="models/text.gltf" animation-mixer="clip:" model-opacity="0.65" rotation="-90 0 0">
-      </a-entity> 
+	  <a-marker type='pattern' url='text.patt'>
+		<a-entity position="0 0 0" scale="0.5 0.5 0.5" gltf-model="models/text.gltf" animation-mixer="clip:" model-opacity="0.65" rotation="-90 0 0">
+		</a-entity> 
     </a-marker> 
     
     <a-entity camera></a-entity>
